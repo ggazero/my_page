@@ -1,93 +1,334 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- ========================================================= -->
-<!-- 바꾸는 곳 1. 브라우저 탭에 뜨는 이름입니다.                    -->
-<!-- ========================================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>김한얼 | 프로덕트 매니저</title>
+  <title>이가영 | 자기소개</title>
 
-<style>
-  :root { --ink:#1a1a1a; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body {
-    font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',sans-serif;
-    color:var(--ink); background:#fff; line-height:1.7;
-    -webkit-text-size-adjust:100%;
-  }
-  .wrap { max-width:720px; margin:0 auto; padding:64px 24px 96px; }
-  .name { font-size:44px; font-weight:800; letter-spacing:-0.02em; }
-  .role { font-size:19px; color:var(--muted); margin-top:10px; }
-  .rule { width:56px; height:4px; background:var(--ink); border-radius:2px; margin:28px 0 36px; }
-  .lead { font-size:20px; line-height:1.75; }
-  h2 { font-size:15px; font-weight:800; letter-spacing:0.06em; color:var(--muted);
-       margin:52px 0 18px; text-transform:uppercase; }
-  ul { list-style:none; }
-  li { padding:14px 0; border-bottom:1px solid var(--line); font-size:17px; }
-  li b { display:block; font-size:13px; color:var(--muted); font-weight:700; margin-bottom:4px; }
-  a { color:var(--accent); text-decoration:none; font-weight:700; }
-  a:hover { text-decoration:underline; }
-  .foot { margin-top:64px; padding-top:24px; border-top:1px solid var(--line);
-          font-size:14px; color:var(--muted); }
-  @media (max-width:600px) {
-    .wrap { padding:44px 20px 72px; }
-    .name { font-size:34px; }
-    .lead { font-size:18px; }
-  }
-</style>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Apple SD Gothic Neo", sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background-color: #f7f8fc;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 20px;
+      color: #3457d5;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .hero {
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background-color: #e9edff;
+      color: #3457d5;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .hero h2 {
+      margin-bottom: 20px;
+      font-size: clamp(42px, 8vw, 72px);
+      line-height: 1.15;
+    }
+
+    .hero h2 span {
+      color: #3457d5;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin-bottom: 32px;
+      color: #555;
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 10px;
+      background-color: #3457d5;
+      color: white;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      margin-bottom: 12px;
+      font-size: 32px;
+    }
+
+    .section-description {
+      margin-bottom: 32px;
+      color: #666;
+    }
+
+    .card {
+      padding: 28px;
+      border: 1px solid #e3e6ef;
+      border-radius: 18px;
+      background-color: white;
+      box-shadow: 0 8px 30px rgba(32, 48, 90, 0.06);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #3457d5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 8px 13px;
+      border-radius: 8px;
+      background-color: #eef1f8;
+      font-size: 14px;
+    }
+
+    .contact-card {
+      text-align: center;
+    }
+
+    .contact-card p {
+      margin: 14px 0 24px;
+      color: #666;
+    }
+
+    footer {
+      padding: 30px 24px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      nav ul {
+        gap: 12px;
+        font-size: 13px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <nav>
+      <h1>이가영</h1>
 
-<div class="wrap">
+      <ul>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#experience">경험</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- ========================================================= -->
-  <!-- 바꾸는 곳 2. 이름과 목표 직무입니다.                          -->
-  <!-- 실명이 부담되면 닉네임을 써도 됩니다.                          -->
-  <!-- ========================================================= -->
-  <div class="name">김한얼</div>
-  <div class="role">프로덕트 매니저를 준비합니다</div>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="label">AI · 서비스 기획을 배우는 중</span>
 
-  <div class="rule"></div>
+        <h2>
+          안녕하세요.<br />
+          <span>이가영</span>입니다.
+        </h2>
 
-  <!-- ========================================================= -->
-  <!-- 바꾸는 곳 3. 나를 한 문장으로. (어제 만든 "캐릭터 한 문장")     -->
-  <!-- ========================================================= -->
-  <p class="lead">
-    막힌 상황에서 원인을 정의하고, 실행 방식을 바꿔 실제 반응을 만들어 온 사람입니다.
-  </p>
+        <p>
+          외식업 현장에서 운영, 교육, 매뉴얼 제작과 문제 해결을 경험했습니다.
+          현재는 기존의 현장 경험을 바탕으로 AI와 서비스 기획을 배우며
+          새로운 가능성을 만들어가고 있습니다.
+        </p>
 
-  <h2>지금 하는 것</h2>
-  <ul>
-    <!-- ===================================================== -->
-    <!-- 바꾸는 곳 4. 목록 항목입니다.                            -->
-    <!-- <li> 한 덩어리가 한 줄입니다. 복사해서 늘리면 됩니다.       -->
-    <!-- ===================================================== -->
-    <li>
-      <b>학습</b>
-      AI 프로덕트 매니저 트랙 (2026.07 - 2026.09)
-    </li>
-    <li>
-      <b>관심</b>
-      결과물보다 과정을 남기는 일. 문제를 정의하고 실행으로 옮기는 구조.
-    </li>
-  </ul>
+        <a class="button" href="#about">저에 대해 더 보기</a>
+      </div>
+    </section>
 
-  <h2>기록</h2>
-  <ul>
-    <!-- ===================================================== -->
-    <!-- 바꾸는 곳 5. 다른 페이지로 가는 링크입니다.                -->
-    <!-- career.html 파일을 만든 뒤에 살아납니다.                  -->
-    <!-- ===================================================== -->
-    <li><a href="career.html">경력 정리 →</a></li>
-  </ul>
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
 
-  <div class="foot">
-    <!-- 바꾸는 곳 6. 아래 날짜만 오늘로 바꾸면 됩니다. -->
-    2026.07.22 부터 기록합니다.
-  </div>
+      <p class="section-description">
+        문제를 발견하면 원인을 확인하고, 여러 사람이 사용할 수 있는 기준과
+        해결 방법으로 정리하는 일을 좋아합니다.
+      </p>
 
-</div>
+      <div class="card">
+        <h3>저는 이런 사람입니다</h3>
+
+        <p>
+          한번 관여한 문제는 모른 척 넘기지 않고, 반복되는 문제인지 확인한 뒤
+          원인과 해결 방법을 찾아 제대로 끝내려고 합니다.
+          경험과 감각에만 의존하던 업무를 매뉴얼과 기준으로 만드는 데 강점이 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+
+      <p class="section-description">
+        현장에서 발견한 문제를 실제 운영 방식의 변화로 연결해왔습니다.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>운영 관리</h3>
+          <p>
+            직영점과 가맹점의 운영 상황을 확인하고, 현장에서 발생하는 문제를
+            파악해 개선 방향을 정리했습니다.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>매뉴얼 제작</h3>
+          <p>
+            사람의 기억에 의존하던 운영 방식과 교육 내용을 문서와 사진으로
+            정리해 공통 기준을 만들었습니다.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>교육 체계화</h3>
+          <p>
+            신규 직원과 매장 담당자가 같은 기준으로 업무를 익히고 교육할 수
+            있도록 교육 자료와 절차를 정리했습니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skills</h2>
+
+      <p class="section-description">
+        지금까지 경험했거나 새롭게 배우고 있는 분야입니다.
+      </p>
+
+      <div class="card">
+        <div class="tags">
+          <span class="tag">운영 관리</span>
+          <span class="tag">문제 정의</span>
+          <span class="tag">매뉴얼 제작</span>
+          <span class="tag">교육 기획</span>
+          <span class="tag">서비스 기획</span>
+          <span class="tag">AI 도구 활용</span>
+          <span class="tag">Python 학습 중</span>
+          <span class="tag">HTML 학습 중</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card contact-card">
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+          함께 이야기하고 싶은 내용이 있다면 연락해주세요.
+        </p>
+
+        <!-- 본인의 이메일 주소로 변경하세요. -->
+        <a class="button" href="mailto:your-email@example.com">
+          이메일 보내기
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> 이가영. All rights reserved.
+  </footer>
+
+  <script>
+    // 현재 연도를 자동으로 표시합니다.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
