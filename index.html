@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko" class="scroll-smooth">
+
+<html class="scroll-smooth" lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="현장 운영 경험을 서비스와 프로덕트 기획 역량으로 연결하는 이가영의 포트폴리오" />
-  <title>이가영 | Gayoung Career Store</title>
-
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Hanken+Grotesk:wght@500;600;700;800&family=Geist+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="현장 운영 경험을 서비스와 프로덕트 기획 역량으로 연결하는 이가영의 포트폴리오" name="description"/>
+<title>이가영 | Gayoung Career Store</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Hanken+Grotesk:wght@500;600;700;800&amp;family=Geist+Mono:wght@400;700&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -40,8 +39,7 @@
       }
     }
   </script>
-
-  <style>
+<style>
     body{
       background:
         linear-gradient(rgba(79,102,84,.035) 1px, transparent 1px),
@@ -234,515 +232,527 @@
     #backToTop.show{opacity:1;pointer-events:auto;transform:none}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
-  </style>
-  <script>document.documentElement.classList.add("js");</script>
+  
+    .evidence-verified{border-left:4px solid #728A75}
+    .evidence-pending{border-left:4px solid #D6B64C}
+    #decision-summary table th,#decision-summary table td{vertical-align:top}
+</style>
+<script>document.documentElement.classList.add("js");</script>
 </head>
-
 <body class="font-body selection:bg-sage selection:text-white">
-  <div id="readingProgress" aria-hidden="true"></div>
-  <a href="#intro" class="sr-only focus:not-sr-only fixed z-[100] top-3 left-3 bg-ink text-white px-4 py-2 rounded-lg">본문 바로가기</a>
-
-  <header class="relative z-40">
-    <div class="awning h-8"></div>
-    <div class="bg-sageDark text-white px-6 py-8 border-b-4 border-double border-white/20 text-center">
-      <h1 class="font-headline text-3xl md:text-5xl font-extrabold tracking-[.12em]">GAYOUNG CAREER STORE</h1>
-      <p class="mt-2 text-[10px] md:text-xs tracking-[.25em] uppercase opacity-80 font-bold">
+<div aria-hidden="true" id="readingProgress"></div>
+<a class="sr-only focus:not-sr-only fixed z-[100] top-3 left-3 bg-ink text-white px-4 py-2 rounded-lg" href="#intro">본문 바로가기</a>
+<header class="relative z-40">
+<div class="awning h-8"></div>
+<div class="bg-sageDark text-white px-6 py-8 border-b-4 border-double border-white/20 text-center">
+<h1 class="font-headline text-3xl md:text-5xl font-extrabold tracking-[.12em]">GAYOUNG CAREER STORE</h1>
+<p class="mt-2 text-[10px] md:text-xs tracking-[.25em] uppercase opacity-80 font-bold">
         Operations · Service Planning · AI Product Management
       </p>
-    </div>
-  </header>
-
-  <div class="lg:grid lg:grid-cols-[minmax(0,1fr)_270px]">
-    <main class="min-w-0">
-      <div class="max-w-6xl mx-auto px-5 md:px-8 py-8">
-
-        <div class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-line bg-paper/90 px-4 py-3 shadow-soft">
-          <div class="flex items-center gap-3 text-xs font-bold tracking-wider uppercase">
-            <span class="w-2.5 h-2.5 rounded-full bg-green-600 shadow-[0_0_0_5px_rgba(22,163,74,.12)]"></span>
+</div>
+</header>
+<div class="lg:grid lg:grid-cols-[minmax(0,1fr)_270px]">
+<main class="min-w-0">
+<div class="max-w-6xl mx-auto px-5 md:px-8 py-8">
+<div class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-line bg-paper/90 px-4 py-3 shadow-soft">
+<div class="flex items-center gap-3 text-xs font-bold tracking-wider uppercase">
+<span class="w-2.5 h-2.5 rounded-full bg-green-600 shadow-[0_0_0_5px_rgba(22,163,74,.12)]"></span>
             Portfolio Online
           </div>
-          <div class="flex gap-2 text-[11px] font-bold">
-            <span class="rounded-full border border-dashed border-sageDark px-3 py-1 text-sageDark">NO. GY-01</span>
-            <span class="rounded-full bg-[#EEF3EE] px-3 py-1">OPEN TO WORK</span>
-          </div>
-        </div>
-
-        <section id="intro" data-title="Introduction" data-chapter="01" class="scroll-mt-6 mb-8 chapter reveal">
-          <div class="store-window bg-paper p-7 md:p-12 relative overflow-hidden">
-            <div class="absolute right-5 top-5 text-8xl opacity-[.05]">▣</div>
-            <span class="inline-block border border-sageDark px-3 py-1 text-[10px] font-bold tracking-widest text-sageDark uppercase mb-6">
+<div class="flex gap-2 text-[11px] font-bold">
+<span class="rounded-full border border-dashed border-sageDark px-3 py-1 text-sageDark">NO. GY-01</span>
+<span class="rounded-full bg-[#EEF3EE] px-3 py-1">OPEN TO WORK</span>
+</div>
+</div>
+<section class="scroll-mt-6 mb-8 chapter reveal" data-chapter="01" data-title="Introduction" id="intro">
+<div class="store-window bg-paper p-7 md:p-12 relative overflow-hidden">
+<div class="absolute right-5 top-5 text-8xl opacity-[.05]">▣</div>
+<span class="inline-block border border-sageDark px-3 py-1 text-[10px] font-bold tracking-widest text-sageDark uppercase mb-6">
               Featured Display · Introduction
             </span>
-            <h2 class="font-headline text-4xl md:text-6xl font-bold leading-[1.13] tracking-tight text-sageDark max-w-4xl">
-              현장의 복잡한 문제를<br>
-              <span class="font-serif italic text-[#7B6B92]">사람이 실제로 움직일 수 있는 구조</span>로 바꿉니다.
+<h2 class="font-headline text-4xl md:text-6xl font-bold leading-[1.13] tracking-tight text-sageDark max-w-4xl">
+              현장의 복잡한 문제를<br/>
+<span class="font-serif italic text-[#7B6B92]">사람이 실제로 움직일 수 있는 구조</span>로 바꿉니다.
             </h2>
-            <p class="mt-7 max-w-3xl border-l-2 border-sage/30 pl-5 text-base md:text-lg leading-8 text-muted">
-              직영·가맹 매장부터 백화점, 아울렛, 복합몰, 공항, 체험형 시설까지 운영 조건이 다른 오프라인 환경에서
-              매장 오픈과 운영 안정화를 수행했습니다. 현장에서 반복되는 문제를 개인의 숙련도에 맡기지 않고
-              운영 기준, 매뉴얼, 교육체계와 협업 프로세스로 전환해 왔으며, 현재는 이 경험을 디지털 서비스와
-              AI Product Management 영역으로 확장하고 있습니다.
-            </p>
-            <div class="mt-7 flex flex-wrap gap-2">
-              <span class="rounded-lg border border-line bg-[#EEF3EE] px-3 py-2 text-sm font-bold text-sageDark">OV·다점포 운영관리</span>
-              <span class="rounded-lg border border-line bg-[#F2F0F6] px-3 py-2 text-sm font-bold">오픈–안정화 전 과정</span>
-              <span class="rounded-lg border border-line bg-[#EEF3EE] px-3 py-2 text-sm font-bold">운영 기준·교육 체계</span>
-              <span class="rounded-lg border border-line bg-[#F4F2EC] px-3 py-2 text-sm font-bold">Cross-functional Problem Solving</span>
-            </div>
-
-            <div class="mt-8 max-w-2xl rounded-2xl border border-line bg-white/90 p-4 shadow-sm">
-              <div class="font-mono text-[10px] font-bold tracking-widest uppercase text-muted mb-3">Quick Contact</div>
-              <div class="grid sm:grid-cols-2 gap-3">
-                <div class="rounded-xl border border-line bg-paper px-4 py-3 hover:border-sage transition-colors">
-                  <span class="block font-mono text-[10px] font-bold tracking-widest uppercase text-muted">Contact</span>
-                  <a href="tel:01000000000" class="block mt-1 text-sm font-bold text-sageDark">010-****-****</a>
-                  <button type="button" data-copy="01000000000" class="mt-2 text-[10px] font-bold text-muted underline underline-offset-4">번호 복사</button>
-                </div>
-                <div class="rounded-xl border border-line bg-paper px-4 py-3 hover:border-sage transition-colors">
-                  <span class="block font-mono text-[10px] font-bold tracking-widest uppercase text-muted">Email</span>
-                  <a href="mailto:ggazero@example.com" class="block mt-1 text-sm font-bold text-sageDark break-all">ggazero@example.com</a>
-                  <button type="button" data-copy="ggazero@example.com" class="mt-2 text-[10px] font-bold text-muted underline underline-offset-4">메일 복사</button>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </section>
-
-
-        <section id="experience" data-title="Operating Scope" data-chapter="02" class="chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8">
-          <div class="flex items-center gap-4 mb-8">
-            <h2 class="font-headline text-3xl md:text-4xl font-bold text-sageDark">Operating Scope</h2>
-            <div class="h-px flex-1 bg-line"></div>
-          </div>
-
-
-          <div class="grid md:grid-cols-2 gap-4 mb-9">
-            <article class="rounded-2xl border border-line bg-[#EEF3EE] p-5 reveal">
-              <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Store Formats</span>
-              <h3 class="font-headline text-xl font-bold mt-2">운영 환경</h3>
-              <div class="flex flex-wrap gap-2 mt-4">
-                <span class="scope-chip">직영점</span><span class="scope-chip">가맹점</span><span class="scope-chip">일반 오프라인</span>
-                <span class="scope-chip">백화점</span><span class="scope-chip">아울렛</span><span class="scope-chip">복합몰</span>
-                <span class="scope-chip">공항</span><span class="scope-chip">체험형 특수상권</span>
-              </div>
-            </article>
-            <article class="rounded-2xl border border-line bg-[#F2F0F6] p-5 reveal" style="--delay:70ms">
-              <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Lifecycle</span>
-              <h3 class="font-headline text-xl font-bold mt-2">담당 범위</h3>
-              <p class="mt-3 text-sm leading-7 text-muted">입점 검토 · 공간/동선 검토 · 기기/키오스크 세팅 · 인력 구성 · 직원 교육 · QSC/VOC 관리 · 오픈 후 안정화</p>
-            </article>
-            <article class="rounded-2xl border border-line bg-[#F4F2EC] p-5 reveal">
-              <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Stakeholders</span>
-              <h3 class="font-headline text-xl font-bold mt-2">협업 대상</h3>
-              <p class="mt-3 text-sm leading-7 text-muted">경영진 · 점주 · 매장 관리자/직원 · 마케팅 · 영업 · 개발 · 인테리어/기기 업체 · 유통시설 관계자</p>
-            </article>
-            <article class="rounded-2xl border border-line bg-sageSoft p-5 reveal" style="--delay:70ms">
-              <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Operational Assets</span>
-              <h3 class="font-headline text-xl font-bold mt-2">조직에 남긴 자산</h3>
-              <p class="mt-3 text-sm leading-7 text-muted">운영 가이드 · 레시피/QSC 매뉴얼 · 오픈 체크리스트 · 실물 작업안 · 교육자료 · 집체교육 체계</p>
-            </article>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-6">
-            <article>
-              <div class="shelf pb-5 mb-4 aspect-[4/3] rounded-t-2xl bg-gradient-to-br from-sageSoft to-[#C7D6C5] grid place-items-center">
-                <span class="text-7xl">🏪</span>
-              </div>
-              <div class="flex justify-between text-[10px] font-bold uppercase text-muted">
-                <span>Stock No. 01</span><span class="bg-sageDark text-white px-2 py-1">Operations</span>
-              </div>
-              <h3 class="font-headline text-xl font-bold text-sageDark mt-3">OV·다점포 운영관리</h3>
-              <p class="text-sm text-muted mt-2">직영·가맹점의 현장 이슈, VOC, 시설·기기, 인력과 운영 품질을 함께 관리하고 반복되는 문제를 공통 기준으로 전환했습니다.</p>
-            </article>
-
-            <article>
-              <div class="shelf pb-5 mb-4 aspect-[4/3] rounded-t-2xl bg-gradient-to-br from-[#EDF2ED] to-[#DDE7DD] grid place-items-center">
-                <span class="text-7xl">🧭</span>
-              </div>
-              <div class="flex justify-between text-[10px] font-bold uppercase text-muted">
-                <span>Stock No. 02</span><span class="bg-sageDark text-white px-2 py-1">Opening</span>
-              </div>
-              <h3 class="font-headline text-xl font-bold text-sageDark mt-3">오픈–안정화 전 과정</h3>
-              <p class="text-sm text-muted mt-2">일반 매장뿐 아니라 백화점·아울렛·복합몰·공항·체험형 특수상권의 제약을 반영해 입점 준비부터 초기 안정화까지 연결했습니다.</p>
-            </article>
-
-            <article>
-              <div class="shelf pb-5 mb-4 aspect-[4/3] rounded-t-2xl bg-gradient-to-br from-[#F2F0F6] to-[#E8E3F0] grid place-items-center">
-                <span class="text-7xl">📚</span>
-              </div>
-              <div class="flex justify-between text-[10px] font-bold uppercase text-muted">
-                <span>Stock No. 03</span><span class="bg-sageDark text-white px-2 py-1">System</span>
-              </div>
-              <h3 class="font-headline text-xl font-bold text-sageDark mt-3">운영 기준·교육 체계</h3>
-              <p class="text-sm text-muted mt-2">운영·레시피·QSC 매뉴얼을 기획하고 디자인, 실물 작업안, 배포와 교육까지 연결했습니다.</p>
-            </article>
-          </div>
-        </section>
-
-
-        <section id="logic" data-title="Working Logic" data-chapter="03" class="chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8">
-          <div class="text-xs font-bold tracking-widest uppercase text-sageDark mb-3">02 · Working Logic</div>
-          <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">문제를 해결하는 데서 끝내지 않고<br>다음 사람이 다시 쓸 수 있게 남깁니다.</h2>
-          <p class="mt-4 max-w-3xl text-muted text-lg">
+<p class="mt-7 max-w-3xl border-l-2 border-sage/30 pl-5 text-base md:text-lg leading-8 text-muted">직영·가맹 매장부터 백화점, 아울렛, 복합몰, 공항, 체험형 시설까지 운영 조건이 다른 오프라인 환경에서 매장 오픈과 운영 안정화를 수행했습니다. 현장에서 반복되는 문제를 개인의 숙련도에 맡기지 않고 운영 기준, 매뉴얼, 교육체계와 협업 프로세스로 전환해 왔으며, 현재는 이 경험을 디지털 서비스와 AI Product Management 영역으로 확장하고 있습니다.</p>
+<div class="mt-7 flex flex-wrap gap-2">
+<span class="rounded-lg border border-line bg-[#EEF3EE] px-3 py-2 text-sm font-bold text-sageDark">OV·다점포 운영관리</span>
+<span class="rounded-lg border border-line bg-[#F2F0F6] px-3 py-2 text-sm font-bold">오픈–안정화 전 과정</span>
+<span class="rounded-lg border border-line bg-[#EEF3EE] px-3 py-2 text-sm font-bold">운영 기준·교육 체계</span>
+<span class="rounded-lg border border-line bg-[#F4F2EC] px-3 py-2 text-sm font-bold">Cross-functional Problem Solving</span>
+</div>
+<div class="mt-8 max-w-2xl rounded-2xl border border-line bg-white/90 p-4 shadow-sm">
+<div class="font-mono text-[10px] font-bold tracking-widest uppercase text-muted mb-3">Quick Contact</div>
+<div class="grid sm:grid-cols-2 gap-3">
+<div class="rounded-xl border border-line bg-paper px-4 py-3 hover:border-sage transition-colors">
+<span class="block font-mono text-[10px] font-bold tracking-widest uppercase text-muted">Contact</span>
+<a class="block mt-1 text-sm font-bold text-sageDark" href="tel:01000000000">010-****-****</a>
+<button class="mt-2 text-[10px] font-bold text-muted underline underline-offset-4" data-copy="01000000000" type="button">번호 복사</button>
+</div>
+<div class="rounded-xl border border-line bg-paper px-4 py-3 hover:border-sage transition-colors">
+<span class="block font-mono text-[10px] font-bold tracking-widest uppercase text-muted">Email</span>
+<a class="block mt-1 text-sm font-bold text-sageDark break-all" href="mailto:ggazero@example.com">ggazero@example.com</a>
+<button class="mt-2 text-[10px] font-bold text-muted underline underline-offset-4" data-copy="ggazero@example.com" type="button">메일 복사</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8" data-chapter="02" data-title="Operating Scope" id="experience">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-sageDark">Operating Scope</h2>
+<div class="h-px flex-1 bg-line"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-4 mb-9">
+<article class="rounded-2xl border border-line bg-[#EEF3EE] p-5 reveal">
+<span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Store Formats</span>
+<h3 class="font-headline text-xl font-bold mt-2">운영 환경</h3>
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="scope-chip">직영점</span><span class="scope-chip">가맹점</span><span class="scope-chip">일반 오프라인</span>
+<span class="scope-chip">백화점</span><span class="scope-chip">아울렛</span><span class="scope-chip">복합몰</span>
+<span class="scope-chip">공항</span><span class="scope-chip">체험형 특수상권</span>
+</div>
+</article>
+<article class="rounded-2xl border border-line bg-[#F2F0F6] p-5 reveal" style="--delay:70ms">
+<span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Lifecycle</span>
+<h3 class="font-headline text-xl font-bold mt-2">담당 범위</h3>
+<p class="mt-3 text-sm leading-7 text-muted">입점 검토 · 공간/동선 검토 · 기기/키오스크 세팅 · 인력 구성 · 직원 교육 · QSC/VOC 관리 · 오픈 후 안정화</p>
+</article>
+<article class="rounded-2xl border border-line bg-[#F4F2EC] p-5 reveal">
+<span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Stakeholders</span>
+<h3 class="font-headline text-xl font-bold mt-2">협업 대상</h3>
+<p class="mt-3 text-sm leading-7 text-muted">경영진 · 점주 · 매장 관리자/직원 · 마케팅 · 영업 · 개발 · 인테리어/기기 업체 · 유통시설 관계자</p>
+</article>
+<article class="rounded-2xl border border-line bg-sageSoft p-5 reveal" style="--delay:70ms">
+<span class="font-mono text-[10px] font-bold uppercase tracking-widest text-sageDark">Operational Assets</span>
+<h3 class="font-headline text-xl font-bold mt-2">조직에 남긴 자산</h3>
+<p class="mt-3 text-sm leading-7 text-muted">운영 가이드 · 레시피/QSC 매뉴얼 · 오픈 체크리스트 · 실물 작업안 · 교육자료 · 집체교육 체계</p>
+</article>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<article>
+<div class="shelf pb-5 mb-4 aspect-[4/3] rounded-t-2xl bg-gradient-to-br from-sageSoft to-[#C7D6C5] grid place-items-center">
+<span class="text-7xl">🏪</span>
+</div>
+<div class="flex justify-between text-[10px] font-bold uppercase text-muted">
+<span>Stock No. 01</span><span class="bg-sageDark text-white px-2 py-1">Operations</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-sageDark mt-3">OV·다점포 운영관리</h3>
+<p class="text-sm text-muted mt-2">직영·가맹점의 현장 이슈, VOC, 시설·기기, 인력과 운영 품질을 함께 관리하고 반복되는 문제를 공통 기준으로 전환했습니다.</p>
+</article>
+<article>
+<div class="shelf pb-5 mb-4 aspect-[4/3] rounded-t-2xl bg-gradient-to-br from-[#EDF2ED] to-[#DDE7DD] grid place-items-center">
+<span class="text-7xl">🧭</span>
+</div>
+<div class="flex justify-between text-[10px] font-bold uppercase text-muted">
+<span>Stock No. 02</span><span class="bg-sageDark text-white px-2 py-1">Opening</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-sageDark mt-3">오픈–안정화 전 과정</h3>
+<p class="text-sm text-muted mt-2">일반 매장뿐 아니라 백화점·아울렛·복합몰·공항·체험형 특수상권의 제약을 반영해 입점 준비부터 초기 안정화까지 연결했습니다.</p>
+</article>
+<article>
+<div class="shelf pb-5 mb-4 aspect-[4/3] rounded-t-2xl bg-gradient-to-br from-[#F2F0F6] to-[#E8E3F0] grid place-items-center">
+<span class="text-7xl">📚</span>
+</div>
+<div class="flex justify-between text-[10px] font-bold uppercase text-muted">
+<span>Stock No. 03</span><span class="bg-sageDark text-white px-2 py-1">System</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-sageDark mt-3">운영 기준·교육 체계</h3>
+<p class="text-sm text-muted mt-2">운영·레시피·QSC 매뉴얼을 기획하고 디자인, 실물 작업안, 배포와 교육까지 연결했습니다.</p>
+</article>
+</div>
+</section>
+<section class="chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8" data-chapter="03" data-title="Working Logic" id="logic">
+<div class="text-xs font-bold tracking-widest uppercase text-sageDark mb-3">02 · Working Logic</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">문제를 해결하는 데서 끝내지 않고<br/>다음 사람이 다시 쓸 수 있게 남깁니다.</h2>
+<p class="mt-4 max-w-3xl text-muted text-lg">
             현장을 관찰하고, 반복되는 문제를 기준으로 정리하고, 실행 가능한 문서와 교육으로 연결한 뒤 조직의 공통 자산으로 남기는 방식으로 일합니다.
           </p>
-
-          <div class="grid md:grid-cols-5 gap-4 mt-8">
-            <article class="rounded-2xl border border-line bg-sageSoft p-5">
-              <span class="font-mono text-xs font-bold text-sageDark">01 OBSERVE</span>
-              <h3 class="font-headline font-bold text-xl mt-3">현장에서 문제 포착</h3>
-              <p class="text-sm text-muted mt-2">매장, 고객, 점주, 직원이 실제로 막히는 지점을 확인합니다.</p>
-            </article>
-            <article class="rounded-2xl border border-line bg-[#F2F0F6] p-5">
-              <span class="font-mono text-xs font-bold text-sageDark">02 DEFINE</span>
-              <h3 class="font-headline font-bold text-xl mt-3">반복 원인 구조화</h3>
-              <p class="text-sm text-muted mt-2">개인의 실수보다 기준과 프로세스의 빈틈을 먼저 찾습니다.</p>
-            </article>
-            <article class="rounded-2xl border border-line bg-[#EEF3EE] p-5">
-              <span class="font-mono text-xs font-bold text-sageDark">03 BUILD</span>
-              <h3 class="font-headline font-bold text-xl mt-3">실행 도구 제작</h3>
-              <p class="text-sm text-muted mt-2">영업 개시·안전·품질·연쇄 영향을 기준으로 우선순위를 정하고 실행 도구로 구체화합니다.</p>
-            </article>
-            <article class="rounded-2xl border border-line bg-[#F4F2EC] p-5">
-              <span class="font-mono text-xs font-bold text-sageDark">04 ALIGN</span>
-              <h3 class="font-headline font-bold text-xl mt-3">관계자와 실행 정렬</h3>
-              <p class="text-sm text-muted mt-2">현장·경영진·타 부서의 목표를 연결하고 실제 결정을 끌어냅니다.</p>
-            </article>
-            <article class="rounded-2xl border border-line bg-[#F7F5F0] p-5">
-              <span class="font-mono text-xs font-bold text-sageDark">05 VERIFY</span>
-              <h3 class="font-headline font-bold text-xl mt-3">결과 확인과 확산</h3>
-              <p class="text-sm text-muted mt-2">적용 결과를 확인하고 다음 매장과 다른 구성원도 쓰는 공통 자산으로 남깁니다.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="projects" data-title="Selected Cases" data-chapter="04" class="chapter reveal scroll-mt-6 mb-8">
-          <div class="mb-8">
-            <div class="text-xs font-bold tracking-widest uppercase text-sageDark mb-3">04 · Project Orders</div>
-            <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">프로젝트를 영수증처럼<br>문제–실행–결과 순서로 정리했습니다.</h2>
-          </div>
-
-          <div class="grid xl:grid-cols-2 gap-8">
-            <article class="receipt p-7 md:p-9 mt-3">
-              <header class="text-center">
-                <div class="inline-block border-2 border-sageDark px-4 py-2 font-headline font-extrabold tracking-[.16em]">PROJECT 01</div>
-                <div class="font-mono text-[10px] uppercase tracking-wider mt-4 text-muted">
+<div class="grid md:grid-cols-5 gap-4 mt-8">
+<article class="rounded-2xl border border-line bg-sageSoft p-5">
+<span class="font-mono text-xs font-bold text-sageDark">01 OBSERVE</span>
+<h3 class="font-headline font-bold text-xl mt-3">현장에서 문제 포착</h3>
+<p class="text-sm text-muted mt-2">매장, 고객, 점주, 직원이 실제로 막히는 지점을 확인합니다.</p>
+</article>
+<article class="rounded-2xl border border-line bg-[#F2F0F6] p-5">
+<span class="font-mono text-xs font-bold text-sageDark">02 DEFINE</span>
+<h3 class="font-headline font-bold text-xl mt-3">반복 원인 구조화</h3>
+<p class="text-sm text-muted mt-2">개인의 실수보다 기준과 프로세스의 빈틈을 먼저 찾습니다.</p>
+</article>
+<article class="rounded-2xl border border-line bg-[#EEF3EE] p-5">
+<span class="font-mono text-xs font-bold text-sageDark">03 BUILD</span>
+<h3 class="font-headline font-bold text-xl mt-3">실행 도구 제작</h3>
+<p class="text-sm text-muted mt-2">영업 개시·안전·품질·연쇄 영향을 기준으로 우선순위를 정하고 실행 도구로 구체화합니다.</p>
+</article>
+<article class="rounded-2xl border border-line bg-[#F4F2EC] p-5">
+<span class="font-mono text-xs font-bold text-sageDark">04 ALIGN</span>
+<h3 class="font-headline font-bold text-xl mt-3">관계자와 실행 정렬</h3>
+<p class="text-sm text-muted mt-2">현장·경영진·타 부서의 목표를 연결하고 실제 결정을 끌어냅니다.</p>
+</article>
+<article class="rounded-2xl border border-line bg-[#F7F5F0] p-5">
+<span class="font-mono text-xs font-bold text-sageDark">05 VERIFY</span>
+<h3 class="font-headline font-bold text-xl mt-3">결과 확인과 확산</h3>
+<p class="text-sm text-muted mt-2">적용 결과를 확인하고 다음 매장과 다른 구성원도 쓰는 공통 자산으로 남깁니다.</p>
+</article>
+</div>
+</section>
+<section class="chapter reveal scroll-mt-6 mb-8" data-chapter="04" data-title="Selected Cases" id="projects">
+<div class="mb-8">
+<div class="text-xs font-bold tracking-widest uppercase text-sageDark mb-3">04 · Project Orders</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">프로젝트를 영수증처럼<br/>문제–실행–결과 순서로 정리했습니다.</h2>
+</div>
+<div class="grid xl:grid-cols-2 gap-8">
+<article class="receipt p-7 md:p-9 mt-3">
+<header class="text-center">
+<div class="inline-block border-2 border-sageDark px-4 py-2 font-headline font-extrabold tracking-[.16em]">PROJECT 01</div>
+<div class="font-mono text-[10px] uppercase tracking-wider mt-4 text-muted">
                   Order No. GY-OPEN-04 · Role: Lead Operator
                 </div>
-                <div class="border-t-2 border-dotted border-sageDark/20 my-6"></div>
-                <h3 class="font-headline text-2xl font-bold">변수가 많은 오픈 과정을<br><span class="font-serif italic text-sageDark">반복 가능한 체계로</span></h3>
-              </header>
-
-              <div class="space-y-5 mt-8">
-                <div class="grid grid-cols-[72px_1fr] gap-3 text-sm">
-                  <strong class="font-mono text-sageDark">[PROB]</strong>
-                  <p class="m-0">오픈마다 기기, 인테리어, 키오스크, 인력, 교육과 동선 이슈가 동시에 발생했지만 공통 기준이 충분하지 않았습니다.</p>
+<div class="border-t-2 border-dotted border-sageDark/20 my-6"></div>
+<h3 class="font-headline text-2xl font-bold">변수가 많은 오픈 과정을<br/><span class="font-serif italic text-sageDark">반복 가능한 체계로</span></h3>
+</header>
+<div class="space-y-5 mt-8">
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[CONTEXT]</strong>
+<p class="m-0">일반 오프라인 매장뿐 아니라 백화점·아울렛·복합몰·공항·체험형 시설 등 입점 조건이 다른 환경에서 신규 매장 오픈과 운영 안정화를 수행했습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[FRAMING]</strong>
+<p class="m-0">오픈을 개별 업무의 합이 아니라, 공간·기기·키오스크·인력·교육·운영 기준이 동시에 맞물려야 하는 통합 운영 문제로 보았습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[WHY NOW]</strong>
+<p class="m-0">브랜드가 다양한 유통시설과 특수상권으로 확장되면서 매장별 제약은 달라졌고, 현장 경험에만 의존하지 않는 오픈 커뮤니케이션과 공통 기준의 필요성이 커졌습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[OWNERSHIP]</strong>
+<p class="m-0">신규 매장 4곳은 준비 단계부터 실제 오픈과 초기 안정화까지 직접 주도했으며, 그 외 오픈 프로젝트에도 지원 역할로 참여했습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[ASSET]</strong>
+<p class="m-0">현장 대응에서 끝내지 않고 오픈 체크 항목, 교육자료, 운영 기준과 커뮤니케이션 내용을 다음 매장에서도 활용할 수 있는 형태로 축적했습니다.</p>
+</div>
+</div>
+<div class="mt-8 rounded-xl bg-[#EEF3EE]/55 p-5">
+<div class="flex justify-between border-b border-sageDark/15 pb-2 font-mono text-xs font-bold">
+<span>TOTAL OUTCOME</span><span>OPENING → STABILIZATION</span>
+</div>
+<p class="mt-3 mb-0 text-sm">오픈일을 맞추는 데서 끝내지 않고 실제 직원이 운영할 수 있는 상태까지 연결했으며, 서로 다른 입점 환경에서 반복 사용할 수 있는 운영 기반을 축적했습니다.</p>
+</div>
+<details class="proof">
+<summary>
+<span class="proof-summary-copy">
+<span class="proof-eyebrow">CLICK / TAP TO OPEN</span>
+<span class="proof-title">채용자가 확인할 수 있는 역량 근거 4개</span>
+<span class="proof-hint">프로젝트 설명에 숨어 있는 PM 역량을 펼쳐보세요.</span>
+</span>
+<span aria-hidden="true" class="proof-action">
+<span class="proof-action-text">펼치기</span>
+<span class="proof-plus">+</span>
+</span>
+</summary>
+<div class="details-body mt-4 grid sm:grid-cols-2 gap-2 text-xs leading-6 text-muted"><div class="sm:col-span-2 rounded-xl border-2 border-sage/30 bg-white p-4">
+<span class="font-mono text-[9px] font-bold tracking-widest uppercase text-sageDark">현재 확인 가능한 근거</span>
+<p class="mt-2 text-xs leading-6 text-muted">신규점 4곳 전 과정 주도, 다양한 오프라인·유통·특수상권 입점 및 운영 경험</p>
+</div>
+<p class="rounded-xl border border-line bg-paper p-3">운영 조건이 다른 오프라인 환경의 범위 설정</p>
+<p class="rounded-xl border border-line bg-paper p-3">영업 개시·안전·품질을 고려한 우선순위 판단</p>
+<p class="rounded-xl border border-line bg-paper p-3">기기·인테리어·키오스크·인력·교육의 통합 조율</p>
+<p class="rounded-xl border border-line bg-paper p-3">오픈 이후 실제 운영 안정화까지의 오너십</p>
+</div>
+</details>
+</article>
+<article class="receipt p-7 md:p-9 mt-3">
+<header class="text-center">
+<div class="inline-block border-2 border-sageDark px-4 py-2 font-headline font-extrabold tracking-[.16em]">PROJECT 02</div>
+<div class="font-mono text-[10px] uppercase tracking-wider mt-4 text-muted">
+                  Order No. GY-MANUAL-01 · Role: Planner &amp; Builder
                 </div>
-                <div class="grid grid-cols-[72px_1fr] gap-3 text-sm">
-                  <strong class="font-mono text-sageDark">[ACT]</strong>
-                  <p class="m-0">신규 매장 4곳의 준비부터 실제 오픈과 초기 안정화까지 직접 주도하며, 단계별 확인 항목과 담당자 간 연결 지점을 정리했습니다.</p>
-                </div>
-                <div class="grid grid-cols-[72px_1fr] gap-3 text-sm">
-                  <strong class="font-mono text-sageDark">[ASSET]</strong>
-                  <p class="m-0">오픈 체크리스트, 운영 기준, 교육 자료와 현장 대응 기록을 다음 오픈에서도 활용할 수 있는 형태로 남겼습니다.</p>
-                </div>
-              </div>
-
-              <div class="mt-8 rounded-xl bg-[#EEF3EE]/55 p-5">
-                <div class="flex justify-between border-b border-sageDark/15 pb-2 font-mono text-xs font-bold">
-                  <span>TOTAL OUTCOME</span><span>OPENING SYSTEM</span>
-                </div>
-                <p class="mt-3 mb-0 text-sm">경험자의 기억에 의존하던 오픈 업무를 여러 담당자가 함께 확인할 수 있는 실행 체계로 전환했습니다.</p>
-              </div>
-            
-              <details class="proof">
-                <summary>
-                  <span class="proof-summary-copy">
-                    <span class="proof-eyebrow">CLICK / TAP TO OPEN</span>
-                    <span class="proof-title">채용자가 확인할 수 있는 역량 근거 4개</span>
-                    <span class="proof-hint">프로젝트 설명에 숨어 있는 PM 역량을 펼쳐보세요.</span>
-                  </span>
-                  <span class="proof-action" aria-hidden="true">
-                    <span class="proof-action-text">펼치기</span>
-                    <span class="proof-plus">+</span>
-                  </span>
-                </summary>
-                <div class="details-body mt-4 grid sm:grid-cols-2 gap-2 text-xs leading-6 text-muted">
-                    <p class="rounded-xl border border-line bg-paper p-3">운영 조건이 다른 오프라인 환경의 범위 설정</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">영업 개시·안전·품질을 고려한 우선순위 판단</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">기기·인테리어·키오스크·인력·교육의 통합 조율</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">오픈 이후 실제 운영 안정화까지의 오너십</p>
-                </div>
-              </details>
-            </article>
-
-            <article class="receipt p-7 md:p-9 mt-3">
-              <header class="text-center">
-                <div class="inline-block border-2 border-sageDark px-4 py-2 font-headline font-extrabold tracking-[.16em]">PROJECT 02</div>
-                <div class="font-mono text-[10px] uppercase tracking-wider mt-4 text-muted">
-                  Order No. GY-MANUAL-01 · Role: Planner & Builder
-                </div>
-                <div class="border-t-2 border-dotted border-sageDark/20 my-6"></div>
-                <h3 class="font-headline text-2xl font-bold">경험에 의존하던 운영을<br><span class="font-serif italic text-sageDark">하나의 기준으로</span></h3>
-              </header>
-
-              <div class="space-y-5 mt-8">
-                <div class="grid grid-cols-[72px_1fr] gap-3 text-sm">
-                  <strong class="font-mono text-sageDark">[PROB]</strong>
-                  <p class="m-0">매장과 담당자마다 설명과 실행 방식이 달라 같은 문제가 반복되고 교육 품질도 일정하지 않았습니다.</p>
-                </div>
-                <div class="grid grid-cols-[72px_1fr] gap-3 text-sm">
-                  <strong class="font-mono text-sageDark">[ACT]</strong>
-                  <p class="m-0">운영·레시피·QSC 매뉴얼의 구조와 세부 기준을 설계하고, 문서 디자인과 실물 작업안 제작, 배포, 집체교육까지 진행했습니다.</p>
-                </div>
-                <div class="grid grid-cols-[72px_1fr] gap-3 text-sm">
-                  <strong class="font-mono text-sageDark">[ALIGN]</strong>
-                  <p class="m-0">시간과 비용이 드는 작업의 필요성을 대표와 핵심 구성원에게 설명하고, 반복되는 현장 문제를 줄이기 위한 조직 자산으로 제안했습니다.</p>
-                </div>
-              </div>
-
-              <div class="mt-8 rounded-xl bg-[#F2F0F6]/65 p-5">
-                <div class="flex justify-between border-b border-sageDark/15 pb-2 font-mono text-xs font-bold">
-                  <span>TOTAL OUTCOME</span><span>STANDARD ASSET</span>
-                </div>
-                <p class="mt-3 mb-0 text-sm">제작한 매뉴얼은 이후 프랜차이즈 운영 시 제공되는 필수 자료로 정착했습니다.</p>
-              </div>
-            
-              <details class="proof">
-                <summary>
-                  <span class="proof-summary-copy">
-                    <span class="proof-eyebrow">CLICK / TAP TO OPEN</span>
-                    <span class="proof-title">채용자가 확인할 수 있는 역량 근거 4개</span>
-                    <span class="proof-hint">프로젝트 설명에 숨어 있는 PM 역량을 펼쳐보세요.</span>
-                  </span>
-                  <span class="proof-action" aria-hidden="true">
-                    <span class="proof-action-text">펼치기</span>
-                    <span class="proof-plus">+</span>
-                  </span>
-                </summary>
-                <div class="details-body mt-4 grid sm:grid-cols-2 gap-2 text-xs leading-6 text-muted">
-                    <p class="rounded-xl border border-line bg-paper p-3">반복 오류를 개인 역량이 아닌 기준 부재로 재정의</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">운영·레시피·QSC 기준을 실행 도구로 구체화</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">대표와 핵심 구성원에게 필요성을 설득한 영향력</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">개인 노하우를 프랜차이즈 공통 자산으로 전환</p>
-                </div>
-              </details>
-            </article>
-
-            <article class="receipt p-7 md:p-9 mt-3 xl:col-span-2">
-              <header class="text-center max-w-2xl mx-auto">
-                <div class="inline-block border-2 border-sageDark px-4 py-2 font-headline font-extrabold tracking-[.16em]">PROJECT 03</div>
-                <div class="font-mono text-[10px] uppercase tracking-wider mt-4 text-muted">
+<div class="border-t-2 border-dotted border-sageDark/20 my-6"></div>
+<h3 class="font-headline text-2xl font-bold">경험에 의존하던 운영을<br/><span class="font-serif italic text-sageDark">하나의 기준으로</span></h3>
+</header>
+<div class="space-y-5 mt-8">
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[GIVEN]</strong>
+<p class="m-0">본사 합류 후 3개월간 현장에서 근무하며 실제 조리와 운영 흐름을 먼저 경험했습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[EVIDENCE]</strong>
+<p class="m-0">명확한 조리·운영 매뉴얼이 거의 없었고, 같은 기준도 사람마다 다르게 전달되어 신규 인력 교육과 운영 일관성에 한계가 생기고 있었습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[REFRAME]</strong>
+<p class="m-0">문제를 직원 개인의 숙련도 부족이 아니라, 누구나 같은 판단과 행동을 할 수 있게 돕는 공통 기준과 전달 도구의 부재로 재정의했습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[WHY NOW]</strong>
+<p class="m-0">브랜드가 직영 중심 단계에서 백화점·대형몰·특수상권·오프라인 가맹점으로 빠르게 확장되면서, 구두 전달 방식만으로는 교육과 품질의 일관성을 유지하기 어려웠습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[DECISION]</strong>
+<p class="m-0">현장 경험을 바탕으로 조리·운영·QSC 기준을 문서, 사진, 실물 작업안과 교육자료로 구체화하고 배포와 교육까지 연결했습니다.</p>
+</div>
+<div class="grid grid-cols-[92px_1fr] gap-3 text-sm">
+<strong class="font-mono text-sageDark">[ALIGN]</strong>
+<p class="m-0">기존 방식과 새 기준 사이를 조율하고, 반복 교육과 현장 편차를 줄이기 위한 조직 자산이라는 관점에서 필요성을 설명했습니다.</p>
+</div>
+</div>
+<div class="mt-8 rounded-xl bg-[#F2F0F6]/65 p-5">
+<div class="flex justify-between border-b border-sageDark/15 pb-2 font-mono text-xs font-bold">
+<span>TOTAL OUTCOME</span><span>REUSABLE OPERATING ASSET</span>
+</div>
+<p class="mt-3 mb-0 text-sm">정리한 문서는 신규 직원 교육, 점포 오픈 커뮤니케이션과 운영 기준 정리에 실제 활용되었고, 브랜드 확장 과정에서 담당자의 구두 설명을 보완하는 공통 운영 자료로 자리 잡았습니다.</p>
+</div>
+<details class="proof">
+<summary>
+<span class="proof-summary-copy">
+<span class="proof-eyebrow">CLICK / TAP TO OPEN</span>
+<span class="proof-title">채용자가 확인할 수 있는 역량 근거 4개</span>
+<span class="proof-hint">프로젝트 설명에 숨어 있는 PM 역량을 펼쳐보세요.</span>
+</span>
+<span aria-hidden="true" class="proof-action">
+<span class="proof-action-text">펼치기</span>
+<span class="proof-plus">+</span>
+</span>
+</summary>
+<div class="details-body mt-4 grid sm:grid-cols-2 gap-2 text-xs leading-6 text-muted"><div class="sm:col-span-2 rounded-xl border-2 border-sage/30 bg-white p-4">
+<span class="font-mono text-[9px] font-bold tracking-widest uppercase text-sageDark">현재 확인 가능한 근거</span>
+<p class="mt-2 text-xs leading-6 text-muted">현장 선경험, 기준 부재 발견, 매뉴얼 직접 구축, 신규 직원·오픈·운영 기준에 실제 활용</p>
+</div>
+<p class="rounded-xl border border-line bg-paper p-3">반복 오류를 개인 역량이 아닌 기준 부재로 재정의</p>
+<p class="rounded-xl border border-line bg-paper p-3">운영·레시피·QSC 기준을 실행 도구로 구체화</p>
+<p class="rounded-xl border border-line bg-paper p-3">대표와 핵심 구성원에게 필요성을 설득한 영향력</p>
+<p class="rounded-xl border border-line bg-paper p-3">개인 노하우를 프랜차이즈 공통 자산으로 전환</p>
+</div>
+</details>
+</article>
+<article class="receipt p-7 md:p-9 mt-3 xl:col-span-2">
+<header class="text-center max-w-2xl mx-auto">
+<div class="inline-block border-2 border-sageDark px-4 py-2 font-headline font-extrabold tracking-[.16em]">PROJECT 03</div>
+<div class="font-mono text-[10px] uppercase tracking-wider mt-4 text-muted">
                   Order No. GY-GROWTH-01 · Cross-functional Project
                 </div>
-                <div class="border-t-2 border-dotted border-sageDark/20 my-6"></div>
-                <h3 class="font-headline text-2xl font-bold">저성과 매장의 문제를<br><span class="font-serif italic text-sageDark">운영 밖에서 다시 정의하다</span></h3>
-              </header>
-
-              <div class="grid md:grid-cols-4 gap-4 mt-8">
-                <div class="rounded-xl border border-line p-4 bg-[#EEF3EE]">
-                  <span class="font-mono text-xs font-bold">DISCOVER</span>
-                  <h4 class="font-bold mt-2">운영만의 문제가 아닌지 확인</h4>
-                  <p class="text-sm text-muted mt-2">공실, 매출, 고객 유입과 매장 사용 흐름을 함께 살폈습니다.</p>
-                </div>
-                <div class="rounded-xl border border-line p-4 bg-[#F2F0F6]">
-                  <span class="font-mono text-xs font-bold">CONNECT</span>
-                  <h4 class="font-bold mt-2">필요한 부서에 먼저 제안</h4>
-                  <p class="text-sm text-muted mt-2">마케팅·영업과 실행 가능한 협업안을 논의했습니다.</p>
-                </div>
-                <div class="rounded-xl border border-line p-4 bg-[#EEF3EE]">
-                  <span class="font-mono text-xs font-bold">ACTIVATE</span>
-                  <h4 class="font-bold mt-2">입점과 유입 흐름 개선</h4>
-                  <p class="text-sm text-muted mt-2">오프라인 활성화와 자체 앱 유입을 함께 높이는 방향으로 실행했습니다.</p>
-                </div>
-                <div class="rounded-xl border border-line p-4 bg-[#F4F2EC]">
-                  <span class="font-mono text-xs font-bold">SHARE</span>
-                  <h4 class="font-bold mt-2">결과를 다른 팀의 자료로</h4>
-                  <p class="text-sm text-muted mt-2">축적된 유입 정보와 현장 자료가 개발팀 활용으로도 이어졌습니다.</p>
-                </div>
-              </div>
-
-              <div class="mt-8 rounded-xl bg-sageSoft p-5">
-                <div class="flex flex-wrap justify-between gap-2 border-b border-sageDark/15 pb-2 font-mono text-xs font-bold">
-                  <span>PROJECT RESULT</span><span>OFFLINE × MARKETING × SALES × DEVELOPMENT</span>
-                </div>
-                <p class="mt-3 mb-0 text-sm">저성과 매장을 단순 운영 문제로 한정하지 않고, 여러 부서가 함께 검토할 수 있는 과제로 전환해 입점률·매출·앱 유입 개선을 추진했습니다.</p>
-              </div>
-            
-              <details class="proof">
-                <summary>
-                  <span class="proof-summary-copy">
-                    <span class="proof-eyebrow">CLICK / TAP TO OPEN</span>
-                    <span class="proof-title">채용자가 확인할 수 있는 역량 근거 4개</span>
-                    <span class="proof-hint">프로젝트 설명에 숨어 있는 PM 역량을 펼쳐보세요.</span>
-                  </span>
-                  <span class="proof-action" aria-hidden="true">
-                    <span class="proof-action-text">펼치기</span>
-                    <span class="proof-plus">+</span>
-                  </span>
-                </summary>
-                <div class="details-body mt-4 grid sm:grid-cols-2 gap-2 text-xs leading-6 text-muted">
-                    <p class="rounded-xl border border-line bg-paper p-3">저성과 원인을 운영 밖의 고객 유입·주문 경험으로 확장</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">현장 관찰과 고객 행동을 바탕으로 협업 과제 정의</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">마케팅·영업·개발이 활용할 수 있는 현장 정보 연결</p>
-                    <p class="rounded-xl border border-line bg-paper p-3">공동 성과와 본인의 기여 범위를 구분한 서술</p>
-                </div>
-              </details>
-            </article>
-          </div>
-        </section>
-
-
-        <section id="evidence" data-title="Recruiter Evidence" data-chapter="05" class="page-section chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8">
-          <div class="chapter-kicker">05 · Recruiter Evidence</div>
-          <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">경력의 문장이 아니라<br>사례로 확인할 수 있는 역량</h2>
-          <p class="mt-4 max-w-4xl text-muted text-lg leading-8">목적 조직의 PM 평가 기준으로 기존 운영 경험을 번역했습니다. 강한 증거와 앞으로 보강할 증거를 구분해 과장 없이 보여줍니다.</p>
-          <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-8">
-            <article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">문제 재정의</h3><p class="text-sm text-muted mt-2">반복 오류를 개인 숙련도가 아닌 기준 부재의 구조 문제로 정의</p></article>
-            <article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">실행 오너십</h3><p class="text-sm text-muted mt-2">기준 수립–제작–배포–교육–현장 안정화까지 연결</p></article>
-            <article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">이해관계자 영향력</h3><p class="text-sm text-muted mt-2">경영진·현장·점주·타 부서·외부 업체 사이의 결정 조율</p></article>
-            <article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">시스템화</h3><p class="text-sm text-muted mt-2">개인 노하우를 신규점과 가맹점이 반복 사용하도록 자산화</p></article>
-            <article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">정량 지표</h3><p class="text-sm text-muted mt-2">매출·앱 유입·입점률·문의/교육시간의 전후 수치 복원</p></article>
-            <article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">가설 검증</h3><p class="text-sm text-muted mt-2">맞았던 가설과 틀렸던 가설을 제품 문법으로 기록</p></article>
-            <article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">트레이드오프</h3><p class="text-sm text-muted mt-2">무엇을 먼저 하고 무엇을 포기했는지 의사결정 근거 정리</p></article>
-            <article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">실패와 학습</h3><p class="text-sm text-muted mt-2">예상과 달랐던 시도와 판단을 수정한 사례 추가</p></article>
-          </div>
-          <a class="page-cue" href="#career"><span>다음: 경력이 어떻게 확장됐는지 확인하기</span><b>→</b></a>
-        </section>
-
-        <section id="career" data-title="Career Timeline" data-chapter="06" class="page-section chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8">
-          <div class="chapter-kicker">06 · Career Timeline</div>
-          <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">현장 실행에서<br>다점포 운영과 시스템 설계로</h2>
-          <div class="mt-8 space-y-4">
-            <article class="rounded-2xl border border-line bg-[#F7F5F0] p-6"><span class="font-mono text-[10px] font-bold text-sageDark">01 · 자연별곡</span><h3 class="font-headline text-xl font-bold mt-2">고객 접점과 현장 운영의 기본</h3><p class="text-sm text-muted mt-2 leading-7">매장 실무에서 시작해 트레이너로 성장하며 서비스 품질, 직원 교육과 현장 실행의 기본을 익혔습니다.</p></article>
-            <article class="rounded-2xl border border-line bg-[#F2F0F6] p-6"><span class="font-mono text-[10px] font-bold text-sageDark">02 · 먼슬리키친</span><h3 class="font-headline text-xl font-bold mt-2">공유주방과 온·오프라인 운영 연결</h3><p class="text-sm text-muted mt-2 leading-7">다수 입점 매장, 고객 동선, 키오스크와 자체 앱이 연결되는 운영을 맡으며 저성과 공간 활성화와 부서 간 협업 경험을 쌓았습니다.</p></article>
-            <article class="rounded-2xl border border-line bg-sageSoft p-6"><span class="font-mono text-[10px] font-bold text-sageDark">03 · 해례본컴퍼니</span><h3 class="font-headline text-xl font-bold mt-2">OV·다점포 운영과 조직 기준 구축</h3><p class="text-sm text-muted mt-2 leading-7">직영·가맹·백화점·아울렛·복합몰·공항·체험형 시설을 관리하며 신규 오픈, 운영 안정화, 매뉴얼과 교육체계 구축을 주도했습니다.</p></article>
-          </div>
-          <a class="page-cue" href="#learning"><span>다음: 기존 경험에 더하고 있는 제품 역량</span><b>→</b></a>
-        </section>
-
-        <section id="learning" data-title="Product Expansion" data-chapter="07" class="chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8">
-          <div class="text-xs font-bold tracking-widest uppercase text-sageDark mb-3">05 · Now Learning</div>
-          <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">기존의 실무 경험을<br>디지털 서비스로 확장하는 중</h2>
-          <p class="mt-4 max-w-3xl text-muted text-lg">
+<div class="border-t-2 border-dotted border-sageDark/20 my-6"></div>
+<h3 class="font-headline text-2xl font-bold">저성과 매장의 문제를<br/><span class="font-serif italic text-sageDark">운영 밖에서 다시 정의하다</span></h3>
+</header>
+<div class="grid md:grid-cols-4 gap-4 mt-8">
+<div class="rounded-xl border border-line p-4 bg-[#EEF3EE]" style="background:#EEF3EE">
+<span class="font-mono text-xs font-bold">BASELINE</span>
+<h4 class="font-bold mt-2">18개 공간 중 실제 운영 3개</h4>
+<p class="text-sm text-muted mt-2">총 18개 테넌트가 가능한 구조였지만 실제 개점 매장은 3곳뿐이었고, 매출과 방문 고객 수에 대한 부담이 분명했습니다.</p>
+</div>
+<div class="rounded-xl border border-line p-4 bg-[#F2F0F6]" style="background:#F2F0F6">
+<span class="font-mono text-xs font-bold">DISCOVER</span>
+<h4 class="font-bold mt-2">고객 행동과 상권을 직접 관찰</h4>
+<p class="text-sm text-muted mt-2">점심시간 유동 인구와 방문 루트를 따라가고, 인근 빌딩과 예상 식수 인원을 확인해 현장 가설을 구체화했습니다.</p>
+</div>
+<div class="rounded-xl border border-line p-4 bg-[#EEF3EE]" style="background:#EEF3EE">
+<span class="font-mono text-xs font-bold">DECIDE</span>
+<h4 class="font-bold mt-2">현장에서 바로 실행할 수 있는 접점 개선</h4>
+<p class="text-sm text-muted mt-2">키오스크 첫 화면 노출, 쿠폰 사용 동선, 테이블 안내와 앱 사용 지원 등 고객이 실제로 접하는 구간부터 개선했습니다.</p>
+</div>
+<div class="rounded-xl border border-line p-4 bg-[#F4F2EC]" style="background:#F4F2EC">
+<span class="font-mono text-xs font-bold">ALIGN</span>
+<h4 class="font-bold mt-2">현장 정보를 본사와 타 부서에 연결</h4>
+<p class="text-sm text-muted mt-2">월별 상승 흐름과 실행 아이디어를 팀회의에서 보고하고, 앱 오류·고객 불편과 입점 문의를 본사·영업팀에 전달했습니다.</p>
+</div>
+</div>
+<div class="mt-8 rounded-xl bg-sageSoft p-5">
+<div class="flex flex-wrap justify-between gap-2 border-b border-sageDark/15 pb-2 font-mono text-xs font-bold">
+<span>DOCUMENTED OUTCOME</span><span>FIELD × APP × SALES</span>
+</div>
+<p class="mt-3 mb-0 text-sm">자체 주문 앱 이용 고객은 초기 소수 수준에서 수백 명 단위로 확대되는 흐름을 보였고 월별 증가세가 이어졌습니다. 입점 규모도 약 1년 동안 3개에서 15개 수준으로 확대되었습니다. 입점 확대와 지점 성장은 영업팀·본사·시장 상황이 함께 만든 공동 성과이며, 저는 현장 관찰과 고객 접점 개선, 입점 문의 연결과 오류·불편 데이터 전달을 담당했습니다.</p>
+</div>
+<details class="proof">
+<summary>
+<span class="proof-summary-copy">
+<span class="proof-eyebrow">CLICK / TAP TO OPEN</span>
+<span class="proof-title">채용자가 확인할 수 있는 역량 근거 4개</span>
+<span class="proof-hint">프로젝트 설명에 숨어 있는 PM 역량을 펼쳐보세요.</span>
+</span>
+<span aria-hidden="true" class="proof-action">
+<span class="proof-action-text">펼치기</span>
+<span class="proof-plus">+</span>
+</span>
+</summary>
+<div class="details-body mt-4 grid sm:grid-cols-2 gap-2 text-xs leading-6 text-muted"><div class="sm:col-span-2 rounded-xl border-2 border-sage/30 bg-white p-4">
+<span class="font-mono text-[9px] font-bold tracking-widest uppercase text-sageDark">현재 확인 가능한 근거</span>
+<p class="mt-2 text-xs leading-6 text-muted">18개 중 3개 운영 → 약 1년 내 15개 수준, 앱 이용 소수 → 수백 명 단위, 고객 동선·상권 관찰 기록</p>
+</div>
+<p class="rounded-xl border border-line bg-paper p-3">저성과 원인을 운영 밖의 고객 유입·주문 경험으로 확장</p>
+<p class="rounded-xl border border-line bg-paper p-3">현장 관찰과 고객 행동을 바탕으로 협업 과제 정의</p>
+<p class="rounded-xl border border-line bg-paper p-3">마케팅·영업·개발이 활용할 수 있는 현장 정보 연결</p>
+<p class="rounded-xl border border-line bg-paper p-3">공동 성과와 본인의 기여 범위를 구분한 서술</p>
+</div>
+</details>
+</article>
+</div>
+</section>
+<section class="page-section chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8" data-chapter="05" data-title="Decision &amp; Outcome" id="decision-summary">
+<div class="chapter-kicker">05 · Decision &amp; Outcome Summary</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">
+    무엇을 만들었는지가 아니라<br/>왜 선택했고 무엇이 달라졌는지
+  </h2>
+<p class="mt-4 max-w-4xl text-muted text-lg leading-8">
+    기존 경력기술서와 자기소개서에서 확인되는 근거만 사용해 문제 정의, 결정과 결과를 한눈에 비교했습니다.
+  </p>
+<div class="mt-8 overflow-x-auto rounded-2xl border border-line">
+<table class="min-w-[900px] w-full text-left text-sm">
+<thead class="bg-sageDark text-white">
+<tr>
+<th class="px-5 py-4 font-bold">CASE</th>
+<th class="px-5 py-4 font-bold">문제 재정의</th>
+<th class="px-5 py-4 font-bold">결정과 역할</th>
+<th class="px-5 py-4 font-bold">확인 가능한 Outcome</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-line">
+<tr class="bg-white">
+<td class="px-5 py-5 font-bold text-sageDark">01 오픈·안정화</td>
+<td class="px-5 py-5 leading-7">개별 이슈 대응이 아니라 서로 다른 입점 조건을 하나의 운영 흐름으로 연결하는 문제</td>
+<td class="px-5 py-5 leading-7">신규점 4곳의 준비–오픈–초기 안정화 주도, 후속 오픈에 활용할 기준과 자료 축적</td>
+<td class="px-5 py-5 leading-7">오픈 완료를 넘어 실제 운영 가능한 상태까지 연결하고 다양한 상권 경험을 공통 운영 기반으로 전환</td>
+</tr>
+<tr class="bg-[#FBFAF6]">
+<td class="px-5 py-5 font-bold text-sageDark">02 매뉴얼·교육</td>
+<td class="px-5 py-5 leading-7">직원 개인의 숙련도 문제가 아니라 공통 기준과 전달 도구의 부재</td>
+<td class="px-5 py-5 leading-7">현장 경험을 조리·운영·QSC 문서와 실물 작업안, 배포·교육 체계로 전환</td>
+<td class="px-5 py-5 leading-7">신규 직원 교육, 점포 오픈 커뮤니케이션과 운영 기준 정리에 실제 활용</td>
+</tr>
+<tr class="bg-white">
+<td class="px-5 py-5 font-bold text-sageDark">03 지점 활성화</td>
+<td class="px-5 py-5 leading-7">저성과를 현장 운영만의 문제가 아니라 고객 유입·주문 접점·입점 활성화의 복합 문제로 확장</td>
+<td class="px-5 py-5 leading-7">유동 인구와 동선 관찰, 키오스크·쿠폰·앱 접점 개선, 입점 문의와 현장 데이터를 본사·영업에 연결</td>
+<td class="px-5 py-5 leading-7">앱 이용 소수 → 수백 명 단위, 입점 3개 → 약 1년 내 15개 수준의 공동 성장 흐름</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-5 rounded-2xl border border-dashed border-sage/50 bg-[#FFF7DA] p-5">
+<span class="font-mono text-[10px] font-bold tracking-widest text-sageDark">HONEST LIMIT</span>
+<p class="mt-2 text-sm leading-7 text-muted">
+      현재 자료로 확인되지 않는 정확한 매출 증감률, 실험 표본, 명시적인 대안 비교와 실패 사례는 추가하지 않았습니다.
+      이후 증빙을 찾으면 각 프로젝트의 Baseline·Trade-off·Learning 항목에 확장할 수 있습니다.
+    </p>
+</div>
+<a class="page-cue" href="#evidence"><span>다음: 채용 관점의 증거와 남은 검증 항목</span><b>→</b></a>
+</section><section class="page-section chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8" data-chapter="06" data-title="Recruiter Evidence" id="evidence">
+<div class="chapter-kicker">06 · Recruiter Evidence</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">경력의 문장이 아니라<br/>사례로 확인할 수 있는 역량</h2>
+<p class="mt-4 max-w-4xl text-muted text-lg leading-8">목적 조직의 PM 평가 기준으로 기존 운영 경험을 번역했습니다. 강한 증거와 앞으로 보강할 증거를 구분해 과장 없이 보여줍니다.</p>
+<div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-8">
+<article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">문제 재정의</h3><p class="text-sm text-muted mt-2">기준 부재와 고객 접점 문제를 현장 관찰에서 발견하고 기존 운영 과제보다 넓게 정의</p></article>
+<article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">실행 오너십</h3><p class="text-sm text-muted mt-2">기준 수립–문서/실물 제작–배포–교육–현장 안정화까지 직접 연결</p></article>
+<article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">이해관계자 영향력</h3><p class="text-sm text-muted mt-2">경영진·점주·현장·영업·본사 간 필요한 정보와 실행을 연결</p></article>
+<article class="rounded-2xl border border-line bg-sageSoft p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">검증 가능</span><h3 class="font-bold mt-3">Outcome 근거</h3><p class="text-sm text-muted mt-2">입점 3→15 수준, 앱 이용 소수→수백 명 단위, 운영 문서의 실제 교육·오픈 활용</p></article>
+<article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">정확한 지표 정의</h3><p class="text-sm text-muted mt-2">매출·전환·문의·교육시간의 기준선, 기간과 측정 방식은 자료 확인이 더 필요</p></article>
+<article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">명시적 대안 비교</h3><p class="text-sm text-muted mt-2">다른 해법을 검토하고 제외한 근거는 현재 문서에 충분히 남아 있지 않음</p></article>
+<article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">트레이드오프</h3><p class="text-sm text-muted mt-2">범위 컷과 우선순위로 미룬 항목을 구체적인 사건 기준으로 추가 검증</p></article>
+<article class="rounded-2xl border border-line bg-[#FFF7DA] p-5"><span class="text-[10px] font-bold bg-white px-2 py-1 rounded-full">보강 중</span><h3 class="font-bold mt-3">실패와 학습</h3><p class="text-sm text-muted mt-2">효과가 없던 시도, 판단을 바꾼 신호와 이후 수정 경험은 별도 복원이 필요</p></article>
+</div>
+<a class="page-cue" href="#career"><span>다음: 경력이 어떻게 확장됐는지 확인하기</span><b>→</b></a>
+</section>
+<section class="page-section chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8" data-chapter="07" data-title="Career Timeline" id="career">
+<div class="chapter-kicker">07 · Career Timeline</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">현장 실행에서<br/>다점포 운영과 시스템 설계로</h2>
+<div class="mt-8 space-y-4">
+<article class="rounded-2xl border border-line bg-[#F7F5F0] p-6"><span class="font-mono text-[10px] font-bold text-sageDark">01 · 자연별곡</span><h3 class="font-headline text-xl font-bold mt-2">고객 접점과 현장 운영의 기본</h3><p class="text-sm text-muted mt-2 leading-7">매장 실무에서 시작해 트레이너로 성장하며 서비스 품질, 직원 교육과 현장 실행의 기본을 익혔습니다.</p></article>
+<article class="rounded-2xl border border-line bg-[#F2F0F6] p-6"><span class="font-mono text-[10px] font-bold text-sageDark">02 · 먼슬리키친</span><h3 class="font-headline text-xl font-bold mt-2">공유주방과 온·오프라인 운영 연결</h3><p class="text-sm text-muted mt-2 leading-7">다수 입점 매장, 고객 동선, 키오스크와 자체 앱이 연결되는 운영을 맡으며 저성과 공간 활성화와 부서 간 협업 경험을 쌓았습니다.</p></article>
+<article class="rounded-2xl border border-line bg-sageSoft p-6"><span class="font-mono text-[10px] font-bold text-sageDark">03 · 해례본컴퍼니</span><h3 class="font-headline text-xl font-bold mt-2">OV·다점포 운영과 조직 기준 구축</h3><p class="text-sm text-muted mt-2 leading-7">직영·가맹·백화점·아울렛·복합몰·공항·체험형 시설을 관리하며 신규 오픈, 운영 안정화, 매뉴얼과 교육체계 구축을 주도했습니다.</p></article>
+</div>
+<a class="page-cue" href="#learning"><span>다음: 기존 경험에 더하고 있는 제품 역량</span><b>→</b></a>
+</section>
+<section class="chapter reveal scroll-mt-6 rounded-[28px] border border-line bg-paper shadow-soft p-7 md:p-10 mb-8" data-chapter="08" data-title="Product Expansion" id="learning">
+<div class="text-xs font-bold tracking-widest uppercase text-sageDark mb-3">08 · Product Expansion</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight">기존의 실무 경험을<br/>디지털 서비스로 확장하는 중</h2>
+<p class="mt-4 max-w-3xl text-muted text-lg">
             완전히 처음부터 시작하는 신입이 아니라, 이미 쌓아 온 운영 전문성에 서비스기획과 AI 기술을 더하고 있습니다.
           </p>
-
-          <div class="grid md:grid-cols-2 gap-5 mt-8">
-            <article class="rounded-2xl border border-line bg-[#F7F5F0] p-6">
-              <h3 class="font-headline text-2xl font-bold">이미 해 온 일</h3>
-              <p class="text-muted mt-2">사용자의 행동이 실제로 일어나는 오프라인 현장에서 문제를 발견하고, 운영 기준과 교육 체계를 설계했습니다.</p>
-              <div class="flex flex-wrap gap-2 mt-5 text-sm font-bold">
-                <span class="rounded-full bg-white border border-line px-3 py-1">매장 운영</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">가맹점 관리</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">신규 오픈</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">직원 교육</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">매뉴얼 제작</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">VOC 관리</span>
-              </div>
-            </article>
-
-            <article class="rounded-2xl border-2 border-sage bg-sageSoft p-6">
-              <h3 class="font-headline text-2xl font-bold">지금 더하는 역량</h3>
-              <p class="text-muted mt-2">현장에서 발견한 문제를 더 많은 사용자가 반복해서 쓸 수 있는 제품과 서비스 구조로 만드는 방법을 배우고 있습니다.</p>
-              <div class="flex flex-wrap gap-2 mt-5 text-sm font-bold">
-                <span class="rounded-full bg-white border border-line px-3 py-1">Product Management</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">서비스 기획</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">AI 도구 활용</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">Python</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">HTML·CSS</span>
-                <span class="rounded-full bg-white border border-line px-3 py-1">GitHub</span>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="contact" data-title="Contact" data-chapter="08" class="chapter reveal scroll-mt-6 rounded-[28px] bg-ink text-white p-8 md:p-12 text-center">
-          <div class="text-xs font-bold tracking-[.24em] uppercase opacity-50">Store Contact</div>
-          <h2 class="font-headline text-3xl md:text-5xl font-bold mt-4">
-            현장의 경험을<br><span class="font-serif italic text-white/80">다음 서비스의 구조로</span>
-          </h2>
-          <p class="max-w-2xl mx-auto mt-5 text-white/70">
+<div class="grid md:grid-cols-2 gap-5 mt-8">
+<article class="rounded-2xl border border-line bg-[#F7F5F0] p-6">
+<h3 class="font-headline text-2xl font-bold">이미 해 온 일</h3>
+<p class="text-muted mt-2">사용자의 행동이 실제로 일어나는 오프라인 현장에서 문제를 발견하고, 운영 기준과 교육 체계를 설계했습니다.</p>
+<div class="flex flex-wrap gap-2 mt-5 text-sm font-bold">
+<span class="rounded-full bg-white border border-line px-3 py-1">매장 운영</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">가맹점 관리</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">신규 오픈</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">직원 교육</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">매뉴얼 제작</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">VOC 관리</span>
+</div>
+</article>
+<article class="rounded-2xl border-2 border-sage bg-sageSoft p-6">
+<h3 class="font-headline text-2xl font-bold">지금 더하는 역량</h3>
+<p class="text-muted mt-2">현장에서 발견한 문제를 더 많은 사용자가 반복해서 쓸 수 있는 제품과 서비스 구조로 만드는 방법을 배우고 있습니다.</p>
+<div class="flex flex-wrap gap-2 mt-5 text-sm font-bold">
+<span class="rounded-full bg-white border border-line px-3 py-1">Product Management</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">서비스 기획</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">AI 도구 활용</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">Python</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">HTML·CSS</span>
+<span class="rounded-full bg-white border border-line px-3 py-1">GitHub</span>
+</div>
+</article>
+</div>
+</section>
+<section class="chapter reveal scroll-mt-6 rounded-[28px] bg-ink text-white p-8 md:p-12 text-center" data-chapter="09" data-title="Contact" id="contact">
+<div class="text-xs font-bold tracking-[.24em] uppercase opacity-50">Store Contact</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold mt-4">
+            현장의 경험을<br/><span class="font-serif italic text-white/80">다음 서비스의 구조로</span>
+</h2>
+<p class="max-w-2xl mx-auto mt-5 text-white/70">
             운영 현장에서 쌓은 문제 해결 경험을 바탕으로, 사용자가 실제로 움직이는 서비스와 제품을 기획하고 싶습니다.
           </p>
-          <div class="mt-8 grid md:grid-cols-2 gap-3 max-w-xl mx-auto text-left">
-            <a href="tel:01000000000" class="rounded-xl border border-white/20 bg-white/5 px-5 py-4 font-bold hover:bg-white/10 transition-colors">
-              <span class="block text-[10px] uppercase tracking-widest opacity-60">Contact</span>
-              <span class="block mt-1 text-base">010-****-****</span>
-            </a>
-            <a href="mailto:ggazero@example.com" class="rounded-xl border border-white/20 bg-white px-5 py-4 font-bold text-ink hover:opacity-95 transition-opacity">
-              <span class="block text-[10px] uppercase tracking-widest opacity-60">Email</span>
-              <span class="block mt-1 text-base">ggazero@example.com</span>
-            </a>
-          </div>
-          <div class="flex flex-wrap justify-center gap-3 mt-4">
-            <a href="#" class="rounded-xl border border-white/30 px-5 py-3 font-bold">이력서 보기</a>
-          </div>
-          <p class="font-mono text-[10px] uppercase tracking-widest opacity-35 mt-12">© 2026 Lee Gayoung · Career Store v1.1</p>
-        </section>
-      </div>
-    </main>
-
-    <aside class="hidden lg:flex sticky top-0 h-screen flex-col bg-[#F1EDE5] border-l border-line p-6 shadow-[-5px_0_22px_rgba(48,52,47,.06)]">
-      <div class="rounded-xl bg-sageDark text-white p-4 text-center mb-8">
-        <div class="text-[10px] uppercase tracking-widest opacity-70 font-bold">Welcome to</div>
-        <div class="font-headline text-xl font-bold mt-1">GAYOUNG KIOSK</div>
-      </div>
-
-      <nav class="space-y-3" aria-label="포트폴리오 메뉴">
-        <a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#intro"><span>01 소개</span><span>→</span></a>
-        <a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#experience"><span>02 경험 범위</span><span>→</span></a>
-<a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#logic"><span>03 일하는 방식</span><span>→</span></a>
-                <a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#projects"><span>04 대표 사례</span><span>→</span></a>
-        <a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#evidence"><span>05 채용 근거</span><span>→</span></a>
-<a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#career"><span>06 경력 흐름</span><span>→</span></a>
-<a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#learning"><span>07 확장 중</span><span>→</span></a>
-        <a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#contact"><span>08 연락</span><span>→</span></a>
-      </nav>
-
-      <div class="mt-5 rounded-xl border border-line bg-white p-4 shadow-sm">
-        <div class="font-mono text-[10px] font-bold tracking-widest uppercase text-muted mb-3">Quick Contact</div>
-        <div class="block border-b border-line pb-3 mb-3">
-          <span class="block text-[10px] font-bold text-muted">CONTACT</span>
-          <a href="tel:01000000000" class="block mt-1 text-xs font-bold hover:text-sageDark">010-****-****</a>
-          <button type="button" data-copy="01000000000" class="mt-1 text-[9px] font-bold text-muted underline underline-offset-4">번호 복사</button>
+<div class="mt-8 grid md:grid-cols-2 gap-3 max-w-xl mx-auto text-left">
+<a class="rounded-xl border border-white/20 bg-white/5 px-5 py-4 font-bold hover:bg-white/10 transition-colors" href="tel:01000000000">
+<span class="block text-[10px] uppercase tracking-widest opacity-60">Contact</span>
+<span class="block mt-1 text-base">010-****-****</span>
+</a>
+<a class="rounded-xl border border-white/20 bg-white px-5 py-4 font-bold text-ink hover:opacity-95 transition-opacity" href="mailto:ggazero@example.com">
+<span class="block text-[10px] uppercase tracking-widest opacity-60">Email</span>
+<span class="block mt-1 text-base">ggazero@example.com</span>
+</a>
+</div>
+<div class="flex flex-wrap justify-center gap-3 mt-4">
+<a class="rounded-xl border border-white/30 px-5 py-3 font-bold" href="#">이력서 보기</a>
+</div>
+<p class="font-mono text-[10px] uppercase tracking-widest opacity-35 mt-12">© 2026 Lee Gayoung · Career Store v1.1</p>
+</section>
+</div>
+</main>
+<aside class="hidden lg:flex sticky top-0 h-screen flex-col bg-[#F1EDE5] border-l border-line p-6 shadow-[-5px_0_22px_rgba(48,52,47,.06)]">
+<div class="rounded-xl bg-sageDark text-white p-4 text-center mb-8">
+<div class="text-[10px] uppercase tracking-widest opacity-70 font-bold">Welcome to</div>
+<div class="font-headline text-xl font-bold mt-1">GAYOUNG KIOSK</div>
+</div>
+<nav aria-label="포트폴리오 메뉴" class="space-y-3"><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#intro"><span>01 소개</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#experience"><span>02 경험 범위</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#logic"><span>03 일하는 방식</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#projects"><span>04 대표 사례</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#decision-summary"><span>05 결정·성과</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#evidence"><span>06 채용 근거</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#career"><span>07 경력 흐름</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#learning"><span>08 확장 중</span><span>→</span></a><a class="nav-link flex items-center justify-between rounded-xl border border-line bg-white px-4 py-3 text-xs font-bold text-sageDark" href="#contact"><span>09 연락</span><span>→</span></a></nav>
+<div class="mt-5 rounded-xl border border-line bg-white p-4 shadow-sm">
+<div class="font-mono text-[10px] font-bold tracking-widest uppercase text-muted mb-3">Quick Contact</div>
+<div class="block border-b border-line pb-3 mb-3">
+<span class="block text-[10px] font-bold text-muted">CONTACT</span>
+<a class="block mt-1 text-xs font-bold hover:text-sageDark" href="tel:01000000000">010-****-****</a>
+<button class="mt-1 text-[9px] font-bold text-muted underline underline-offset-4" data-copy="01000000000" type="button">번호 복사</button>
+</div>
+<div class="block">
+<span class="block text-[10px] font-bold text-muted">EMAIL</span>
+<a class="block mt-1 text-xs font-bold break-all hover:text-sageDark" href="mailto:ggazero@example.com">ggazero@example.com</a>
+<button class="mt-1 text-[9px] font-bold text-muted underline underline-offset-4" data-copy="ggazero@example.com" type="button">메일 복사</button>
+</div>
+</div>
+<div class="mt-auto space-y-3">
+<div class="rounded-xl border border-line bg-white p-4 font-mono text-[10px] leading-5 text-sageDark">
+<strong class="block uppercase mb-1">Status</strong>
+          PORTFOLIO ONLINE<br/>READY TO CONNECT
         </div>
-        <div class="block">
-          <span class="block text-[10px] font-bold text-muted">EMAIL</span>
-          <a href="mailto:ggazero@example.com" class="block mt-1 text-xs font-bold break-all hover:text-sageDark">ggazero@example.com</a>
-          <button type="button" data-copy="ggazero@example.com" class="mt-1 text-[9px] font-bold text-muted underline underline-offset-4">메일 복사</button>
-        </div>
-      </div>
-
-      <div class="mt-auto space-y-3">
-        <div class="rounded-xl border border-line bg-white p-4 font-mono text-[10px] leading-5 text-sageDark">
-          <strong class="block uppercase mb-1">Status</strong>
-          PORTFOLIO ONLINE<br>READY TO CONNECT
-        </div>
-        <a href="#contact" class="block rounded-xl bg-sageDark text-white text-center py-3 text-xs font-bold tracking-wider">연락 정보 보기</a>
-      </div>
-    </aside>
-  </div>
-
-  <nav class="lg:hidden fixed z-50 bottom-3 left-3 right-3 rounded-2xl border border-line bg-paper/95 shadow-soft backdrop-blur px-2 py-2 overflow-x-auto mobile-scroll">
-    <div class="flex gap-2 min-w-max text-xs font-bold">
-      <a class="mobile-nav-link px-3 py-2 rounded-lg bg-sageDark text-white" href="#intro">소개</a>
-      <a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#experience">범위</a>
-<a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#logic">방식</a>
-      <a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#projects">프로젝트</a>
-      <a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#evidence">근거</a>
-<a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#career">경력</a>
-<a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#learning">확장</a>
-      <a class="mobile-nav-link px-3 py-2 rounded-lg bg-sageDark text-white" href="#contact">연락</a>
-    </div>
-  </nav>
-
-
-  <button id="backToTop" type="button" aria-label="맨 위로 이동" class="fixed z-[60] right-5 bottom-20 lg:bottom-5 w-11 h-11 rounded-full bg-sageDark text-white font-bold shadow-soft">↑</button>
-
-
-  <script>
+<a class="block rounded-xl bg-sageDark text-white text-center py-3 text-xs font-bold tracking-wider" href="#contact">연락 정보 보기</a>
+</div>
+</aside>
+</div>
+<nav class="lg:hidden fixed z-50 bottom-3 left-3 right-3 rounded-2xl border border-line bg-paper/95 shadow-soft backdrop-blur px-2 py-2 overflow-x-auto mobile-scroll">
+<div class="flex gap-2 min-w-max text-xs font-bold"><a class="mobile-nav-link px-3 py-2 rounded-lg bg-sageDark text-white" href="#intro">소개</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#experience">범위</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#logic">방식</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#projects">사례</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#decision-summary">결정·성과</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#evidence">근거</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#career">경력</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-white border border-line" href="#learning">확장</a><a class="mobile-nav-link px-3 py-2 rounded-lg bg-sageDark text-white" href="#contact">연락</a></div>
+</nav>
+<button aria-label="맨 위로 이동" class="fixed z-[60] right-5 bottom-20 lg:bottom-5 w-11 h-11 rounded-full bg-sageDark text-white font-bold shadow-soft" id="backToTop" type="button">↑</button>
+<script>
     const sections = [...document.querySelectorAll("main section[id]")];
     const desktopLinks = [...document.querySelectorAll(".nav-link")];
     const mobileLinks = [...document.querySelectorAll(".mobile-nav-link")];
@@ -844,7 +854,5 @@
       });
     });
   </script>
-
-
 </body>
 </html>
