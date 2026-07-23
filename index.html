@@ -1542,13 +1542,59 @@
     }
 
 
-    /* Final layout corrections for the entrance screen */
-    @media (min-width: 1051px) {
+    /* Final layout corrections: center the page while keeping the kiosk on the right */
+    @media (min-width: 1221px) {
       .page {
-        width: min(1120px, calc(100% - 250px));
-        margin-right: 205px;
+        width: min(1100px, calc(100% - 412px));
+        margin-right: auto;
         margin-left: auto;
       }
+    }
+
+    /* On medium desktop widths, keep the content centered and move the same menu to the bottom
+       before it can overlap the centered page. */
+    @media (min-width: 1051px) and (max-width: 1220px) {
+      :root { --right-nav-width: 0px; }
+
+      .page {
+        width: min(940px, calc(100% - 32px));
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 104px;
+      }
+
+      .right-nav {
+        top: auto;
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        width: auto;
+        transform: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 4px;
+        padding: 7px;
+        border-radius: 17px;
+      }
+
+      .right-nav::before,
+      .right-nav::after,
+      .nav-title { display: none; }
+
+      .nav-link {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        justify-items: center;
+        margin: 0;
+        padding: 8px 4px;
+        text-align: center;
+      }
+
+      .nav-link:hover,
+      .nav-link.hovering { transform: translateY(-2px); }
+
+      .nav-text { font-size: 10px; }
+      .nav-no { font-size: 8px; }
     }
 
     .display-window .underline { white-space: normal; }
